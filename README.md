@@ -8,3 +8,9 @@ BotHoster
 - Background Hosting
 - Supports many bots
 - Easy to edit commands
+
+### Windows Form: 
+A Background Working app.
+
+### Windows Console:
+Nice Console App to develop a bot.
