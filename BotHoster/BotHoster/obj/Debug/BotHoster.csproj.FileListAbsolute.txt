@@ -1,0 +1,14 @@
+D:\Alex\Visual\BotHoster\BotHoster\obj\Debug\BotHoster.csprojAssemblyReference.cache
+D:\Alex\Visual\BotHoster\BotHoster\obj\Debug\BotHoster.Properties.Resources.resources
+D:\Alex\Visual\BotHoster\BotHoster\obj\Debug\BotHoster.csproj.GenerateResource.cache
+D:\Alex\Visual\BotHoster\BotHoster\obj\Debug\BotHoster.csproj.CoreCompileInputs.cache
+D:\Alex\Visual\BotHoster\BotHoster\bin\Debug\BotHoster.exe.config
+D:\Alex\Visual\BotHoster\BotHoster\bin\Debug\BotHoster.exe
+D:\Alex\Visual\BotHoster\BotHoster\bin\Debug\BotHoster.pdb
+D:\Alex\Visual\BotHoster\BotHoster\bin\Debug\Newtonsoft.Json.dll
+D:\Alex\Visual\BotHoster\BotHoster\bin\Debug\Telegram.Bot.dll
+D:\Alex\Visual\BotHoster\BotHoster\bin\Debug\Newtonsoft.Json.xml
+D:\Alex\Visual\BotHoster\BotHoster\bin\Debug\Telegram.Bot.xml
+D:\Alex\Visual\BotHoster\BotHoster\obj\Debug\BotHoster.csproj.CopyComplete
+D:\Alex\Visual\BotHoster\BotHoster\obj\Debug\BotHoster.exe
+D:\Alex\Visual\BotHoster\BotHoster\obj\Debug\BotHoster.pdb

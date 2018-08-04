@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ReChatterHost.Properties
+namespace BotHoster.Properties
 {
 
 

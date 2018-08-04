@@ -10,9 +10,9 @@ using Telegram.Bot;
 using Telegram.Bot.Types.ReplyMarkups;
 using Telegram.Bot.Types;
 
-namespace Host
+namespace BotHoster
 {
-    static class FluxAssistant
+    static class ReChatter
     {
 
         static BackgroundWorker bw;
@@ -29,10 +29,12 @@ namespace Host
         {
 
             var worker = sender as BackgroundWorker;
-            var key = "627466136:AAFo8004Q5Z_UvZSjMsyiDstRcizoBE6xEQ"; // <<< PUT REAL KEY
+            var key = "573711040:AAFTiBmtBskcWKhD9Qw03dyXS6jw4WGjwSA"; // <<< PUT REAL KEY
             try
             {
                 var Bot = new Telegram.Bot.TelegramBotClient(key);
+                //Bot.SetWebhook("");
+                //await Bot.SetWebhookAsync("");
 
                 int offset = 0;
                 while (true)
@@ -44,35 +46,34 @@ namespace Host
                         var message = update.Message;
                         if (message.Type == Telegram.Bot.Types.Enums.MessageType.Text)
                         {
-                            if (message.Text == "/start" || message.Text == "/start@" + AppSettings.FAName)
+                            if (message.Text == "/start")
                             {
-                                await Bot.SendTextMessageAsync(message.Chat.Id, "Good day! I'm Flux Assistant. I am always ready to help you. Right now, I am in Alpha Version. My developer is @AlexBesida", replyMarkup: new InlineKeyboardMarkup(InlineKeyboardButton.WithUrl("Alex Besida", "https://t.me/AlexBesida")));
+                                await Bot.SendTextMessageAsync(message.Chat.Id, "Hi! Welcome to Rechatter Bot!. With me you can send incognito messages to any user. To use me, you should have app ReChatter Bot App on your Windows Device (XBox/WindowsPhone/WindowsPC etc.). Right now you cant find any release for this app. So to get this app contact to developer @AlexBesida. Using me without special app is working in progress.", replyMarkup: new InlineKeyboardMarkup(InlineKeyboardButton.WithUrl("Alex Besida", "https://t.me/AlexBesida")));
                             }
 
-                            if (message.Text == "/developer" || message.Text == "/developer@" + AppSettings.FAName)
+                            if (message.Text == "/developer")
                             {
-
                                 await Bot.SendTextMessageAsync(message.Chat.Id, "My developer is Alex Besida.", replyMarkup: new InlineKeyboardMarkup(InlineKeyboardButton.WithUrl("Alex Besida", "https://t.me/AlexBesida")));
                             }
 
-                            if (message.Text == "/feedback" || message.Text == "/@" + AppSettings.FAName)
+                            if (message.Text == "/sendmessage")
                             {
                                 await Bot.SendTextMessageAsync(message.Chat.Id, comingsoon);
                             }
 
-                            if (message.Text == "/help" || message.Text == "/help@" + AppSettings.FAName)
+                            if (message.Text == "/feedback")
                             {
                                 await Bot.SendTextMessageAsync(message.Chat.Id, comingsoon);
                             }
 
-                            if (message.Text == "/settings" || message.Text == "/settings@" + AppSettings.FAName)
+                            if (message.Text == "/help")
                             {
                                 await Bot.SendTextMessageAsync(message.Chat.Id, comingsoon);
                             }
 
-                            if (message.Text == "/myid" || message.Text == "/myid@" + AppSettings.FAName)
+                            if (message.Text == "/settings")
                             {
-                                await Bot.SendTextMessageAsync(message.Chat.Id, message.From.ToString());
+                                await Bot.SendTextMessageAsync(message.Chat.Id, comingsoon);
                             }
                         }
 
@@ -85,7 +86,7 @@ namespace Host
             {
                 Console.WriteLine(ex);
             }
-            
+
         }
 
     }
