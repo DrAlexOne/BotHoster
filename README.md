@@ -15,4 +15,4 @@ A Background Working app.
 ### Windows Console:
 Nice Console App to develop a bot.
 
-I will contine developing in 1-2 days
+I will contine developing in 1 day
